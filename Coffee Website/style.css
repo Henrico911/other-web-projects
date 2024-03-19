@@ -1,0 +1,258 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #000;
+}
+
+
+#slider-container {
+    height: 500px;
+}
+
+
+
+
+/* THE HEADER SECTION */
+/* Styling the header section */
+.header-section {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px 20px;
+    align-items: center;
+    align-content: center;
+
+}
+
+/* Styling the logo */
+.logo img {
+    max-width: 100px;
+}
+
+.desc {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gold;
+}
+
+/* Styling the contact information */
+.contact-info {
+    display: flex;
+}
+
+.info-item {
+    margin-right: 20px;
+    color: gold;
+}
+
+.info-item span {
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+.menu-bar {
+    border: 1px solid gold;
+    background-color: #000;
+    z-index: 999;
+    position: sticky;
+}
+
+.menu-bar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.menu-bar ul li {
+    display: inline-block;
+}
+
+.menu-bar ul li a {
+    display: block;
+    color: gold;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+.menu-bar ul li a:hover  {
+    color: #000;
+}
+
+.menu-bar ul li:hover {
+    background-color: gold;
+    border-radius: 5px;
+}
+
+/* Styling the dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 150px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+} 
+
+.dropdown-content a:hover {
+    background-color: hsl(16, 85%, 54%);
+    border-radius: 5px;
+    color: #000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 5px;
+    border: 1px solid hsl(16, 85%, 54%);
+}
+
+
+
+#main {
+    background-image: url(img/slide/patrick-tomasso-GXXYkSwndP4-unsplash.jpg);
+}
+
+
+
+
+
+
+
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    border: 1px solid #ff7200;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover; /* or object-fit: contain; depending on your preference */
+}
+
+.slide-content h1 {
+    margin-bottom: 10px;
+}
+
+.slide-content p {
+    margin-bottom: 20px;
+}
+
+
+.slide-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust background color and opacity as needed */
+    color: white; /* Adjust text color */
+    padding: 10px;
+    text-align: center;
+    z-index: 1; /* Ensure the text appears above the image */
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
+
+
+
+
+
+
+#footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #000;
+    color: gold;
+    /* padding: 50px 0; */
+    flex-direction: row;
+    height: 90px;
+    /* border: 1px solid gold; */
+}
+
+.footer-content {
+    flex: 1 1 30%; /* Adjust the width of each column */
+    margin: 0 20px;
+    /* border: 1px solid #088178; */
+}
+
+.footer-content h2 {
+    font-size: 18px;
+    /* margin-bottom: 15px; */
+    margin-top: 5px;
+}
+
+.footer-content p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links li a {
+    color: gold;
+    text-decoration: none;
+}
+
+
